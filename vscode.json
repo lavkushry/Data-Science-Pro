@@ -1,0 +1,612 @@
+{
+  "window.title": "${activeEditorFull}${separator}${rootName}",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "powermode.enabled": true,
+  // Valid values: particles, fireworks, flames, magic, clippy, simple-rift, exploding-rift
+  "powermode.presets": "magic",
+  // Font: Ligaturized version of SFMono: https://github.com/kube/sf-mono-ligaturized/tree/master/ligaturized
+  // Even better: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized
+  "editor.fontFamily": "'Liga SFMono Nerd Font', 'SFMono', 'Roboto Mono', 'Fira Code', 'Victor Mono', 'Cascadia Code', 'JetBrains Mono', 'Dank Mono', 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', 'monospace'",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 21,
+  "editor.fontSize": 12,
+  "window.zoomLevel": 0.6,
+  "editor.mouseWheelZoom": false,
+  "explorer.openEditors.visible": 100,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.renderLineHighlight": "none",
+  "vscode_custom_css.imports": [
+    "file:///Users/rolle/Projects/vscode-settings/editor.css"
+  ],
+  "sync-rsync.exclude": [
+    "node_modules",
+    "acf-json",
+    ".git",
+    ".DS_Store"
+  ],
+  "sync-rsync.args": [
+    "--archive",
+    "--no-perms",
+    "--omit-dir-times",
+    "--no-owner",
+    "--no-group"
+  ],
+  "indentRainbow.includedLanguages": [
+    "php",
+    "html",
+    "js"
+  ],
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "full": {
+        "surround": "#bd93f9"
+      },
+      "left": {
+        "surround": "#bd93f9"
+      },
+      "right": {
+        "surround": "#bd93f9"
+      },
+    },
+    "closing": {
+      "full": {
+        "surround": "#bd93f9"
+      }
+    }
+  },
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript"
+  ],
+  "window.restoreWindows": "all",
+  "window.newWindowDimensions": "inherit",
+  "editor.autoIndent": "full",
+  "editor.tabCompletion": "on",
+  "codestats.apikey": "SFMyNTY.Y205c2JHVT0jI05qWXhPQT09.ORJkNVcSU9GrW5x1Q5Tw2Y_8s2HTAjd4We8-BFLqgEE",
+  "codestats.username": "rolle",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "doiuse.enable": true,
+  "doiuse.messageLevel": "Error",
+  "doiuse.ignore": [
+    "minmax",
+  ],
+  "doiuse.run": "onType",
+  "doiuse.browsers": [
+    "last 1 edge version",
+    "safari > 14",
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "not firefox > 90",
+    "not ie > 0",
+    "not ucandroid > 0",
+    "not firefoxandroid > 0",
+    "not samsung > 0",
+    "not op_mob > 0",
+    "> 1% in FI",
+  ],
+  "caniuse.browser_scope": "last 1 edge version, safari 14, last 1 chrome version, last 1 firefox version, not firefox > 90, not dead, not ie > 0, not ucandroid > 0, not firefoxandroid > 0, not samsung > 0, not op_mob > 0, > 1% in FI",
+  "phpcs.enable": true,
+  "phpcs.executablePath": "/usr/local/bin/phpcs",
+  // "phpcs.standard": "${workspaceFolder}/content/themes/${workspaceFolderBasename}/phpcs.xml",
+  "phpcs.showSources": true,
+  "phpcs.ignorePatterns": [
+    "*/index.php",
+    "wp-config.php",
+    "*/ignored-dir/*",
+    "*content/plugins/*",
+    "*content/plugins-legacy/*",
+    "*legacy*"
+  ],
+  "auto-close-tag.SublimeText3Mode": true,
+  "scssLint.runOnTextChange": false,
+  "codesnap.backgroundColor": "#bea0fa",
+  "codesnap.showWindowTitle": true,
+  "codesnap.realLineNumbers": true,
+  "codesnap.showWindowControls": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "files.exclude": {
+    "**/tmp/**": true,
+    "**/node_modules/**": true,
+    "**/bower_components/**": true
+  },
+  "files.watcherExclude": {
+    "**/tmp/**": true,
+    "**/node_modules/**": true,
+    "**/bower_components/**": true
+  },
+  "saveAndRun": {
+    "commands": [
+      {
+        "match": "\\.php?$",
+        "cmd": "cd ${fileDirname} && /Users/rolle/Projects/PHP_CodeSniffer/bin/phpcbf --standard=/Users/rolle/Projects/airdev/content/themes/air-light/phpcs.xml ${fileBasename}",
+        "useShortcut": false,
+        "silent": true
+      }
+    ]
+  },
+  "fileheader.custom_template_path": "/Users/rolle/Projects/vscode-settings/fileheaders/",
+  "fileheader.file_suffix_mapping": {
+    ".php": "PHP"
+  },
+  "fileheader.is_header_exists": "@Date:",
+  "fileheader.author": "Lavkush Kuma",
+  "fileheader.email": "lavkushry@gmail.com",
+  "fileheader.Author": "Lavkush Kumar",
+  "fileheader.other_config": {
+    "email": "lavkushry@gmail.com",
+  },
+  "fileheader.open": false,
+  "fileheader.save": true,
+  "fileheader.dateformat": "YYYY-MM-DD HH:mm:ss",
+  "fileheader.Email": "lavkushry@gmail.com",
+  "fileheader.LastModifiedBy": "Lavkush Kuma",
+  "fileheader.ignore": [
+    "config.js",
+    "air-light-demo-content.php",
+    "nav-walker",
+    "*.vue",
+    "*.html",
+    "*.txt",
+    "*.scss",
+    "*.css",
+    "*.xml",
+    "*.svg",
+    "development.php",
+    "style.css",
+    "air-light/js/src/front-end.js",
+    "eslintrc.js",
+    "gulp",
+    "*newsletter/index.php",
+    "config/",
+    "gulpfile.js",
+    "keskiaikafestivaali",
+    "air-notifications",
+    "newicon",
+    "index.php",
+    "mps",
+    "bin/tasks",
+    "alive",
+    "rescuetime",
+    "auto",
+    "vscode",
+    "mastodon",
+    "seak",
+    "metallipajanieminen",
+    "memento-mori",
+    "pricing-estimate-calculator",
+    "aitomaaseutu",
+    "node_modules",
+    "swiper",
+    "stylelint-",
+    "stylefmt",
+    "org.filezilla",
+    "macos-lemp-setup",
+    "ruuvi-textdata",
+    "browser-extension",
+    "*.vue",
+    "*.sh"
+  ],
+  "activitusbar.views": [
+    {
+      "name": "explorer",
+      "codicon": "files"
+    },
+    {
+      "name": "search",
+      "codicon": "search"
+    },
+    {
+      "name": "scm",
+      "codicon": "source-control"
+    },
+    {
+      "name": "debug",
+      "codicon": "debug"
+    },
+    {
+      "name": "extensions",
+      "codicon": "extensions"
+    },
+    {
+      "name": "problems",
+      "codicon": "bug"
+    }
+  ],
+  "files.autoSaveDelay": 0,
+  "search.enableSearchEditorPreview": true,
+  "editor.scrollbar.verticalScrollbarSize": 5,
+  "editor.scrollbar.horizontalScrollbarSize": 5,
+  "customizeUI.activityBar": "regular",
+  "window.titleBarStyle": "custom",
+  "customizeUI.titleBar": "frameless",
+  "window.closeWhenEmpty": false,
+  "editor.mouseWheelScrollSensitivity": 0,
+  "editor.wordSeparators": "./\\()\"':,.;<>~!@#%^&*|+=[]{}`~?",
+  "editor.formatOnPaste": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "search.collapseResults": "alwaysCollapse",
+  "theme-by-language.themes": {
+    "markdown": "Github",
+    "*": "Monokai Extended"
+  },
+  "git.autofetch": true,
+  "breadcrumbs.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.matchBrackets": "always",
+  "bracket-pair-colorizer-2.colors": [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : Orchid",
+    "opacity: 0.99"
+  ],
+  "editor.tabSize": 2,
+  "html.format.contentUnformatted": "pre,code,textarea",
+  "html.format.endWithNewline": true,
+  "html.format.extraLiners": "head, body, /html",
+  "html.format.indentHandlebars": false,
+  "html.format.indentInnerHtml": false,
+  "html.format.maxPreserveNewLines": null,
+  "html.format.preserveNewLines": true,
+  "html.format.wrapLineLength": 600,
+  "html.format.wrapAttributes": "auto",
+  "phpcbf.executablePath": "/Users/rolle/Projects/PHP_CodeSniffer/bin/phpcbf",
+  "phpcbf.enable": true,
+  "phpcbf.documentFormattingProvider": true,
+  "phpcbf.onsave": false,
+  // "phpcbf.standard": "/Users/rolle/Projects/airdev/content/themes/air-light/phpcs.xml",
+  // When set to null, phpcbf will use, if it's set, the default_standard (phpcs -i), otherwise fallback to Pear. You set the default standard using phpcs --config-set
+  "phpcbf.standard": null,
+  "showErrorMessages": false,
+  "stylefmt.showError": false,
+  "php-cs-fixer.formatHtml": false,
+  "beautify.language": {
+    "html": [
+      "htm",
+      "html",
+      "php"
+    ]
+  },
+  "stylelint.customSyntax": "postcss-scss",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "never",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "files.trimTrailingWhitespace": false
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "bounded",
+    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "bounded",
+    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "ronilaukkarinen.vscode-stylefmt"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "off",
+    "editor.wordWrap": "bounded",
+    "files.trimTrailingWhitespace": false
+  },
+  "phpSniffer.autoDetect": true,
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "search.exclude": {
+    "**/*.bundle.js": true,
+    "**/*.css": true,
+    "**/*all.js": true,
+    "**Library": true,
+    "~/Library**": true
+  },
+  "material-icon-theme.saturation": 0,
+  "material-icon-theme.opacity": 0.8,
+  "helium-icon-theme.saturation": 0,
+  "helium-icon-theme.opacity": 0.8,
+  "colorize.colorized_variables": [
+    "SASS",
+    "CSS",
+  ],
+  "nightlight.overrideUntil": "2020-06-16T20:13:57.359Z",
+  "nightlight.nightTheme": "Github Dark",
+  "nightlight.dayTheme": "Github",
+  "nightlight.dayIconTheme": "city-lights-icons-vsc",
+  "nightlight.nightIconTheme": "city-lights-icons-vsc",
+  "nightlight.gpsLat": 62.2398897,
+  "nightlight.gpsLong": 25.739983,
+  "city-lights-icons-vsc.hidesExplorerArrows": true,
+  "search.quickOpen.history.filterSortOrder": "recency",
+  "gitlens.menus": false,
+  "svgviewer.enableautopreview": false,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "sync.gist": "05b1969d1a6ce9824b149e43bfe11495",
+  "editor.minimap.enabled": true,
+  "compile-hero.language": {
+    "js": {
+      "type": [
+        "javascript",
+        "json",
+        "jsonc"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautifyrc"
+      ]
+    },
+    "css": [
+      "css",
+      "less",
+      "scss"
+    ],
+    "html": [
+      "htm",
+      "html",
+      "php"
+    ]
+  },
+  "compile-hero.sass-output-toggle": false,
+  "compile-hero.scss-output-toggle": false,
+  "compile-hero.typescript-output-toggle": false,
+  "compile-hero.typescriptx-output-toggle": false,
+  "python.pythonPath": "/usr/local/opt/python@3.8/bin/python3.8",
+  "workbench.editor.limit.value": 20,
+  "php.suggest.basic": false,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onSave",
+  "extensions.ignoreRecommendations": false,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.colorCustomizations": {
+    // Disable shadows:
+    "scrollbar.shadow": "#ffffff00",
+    "widget.shadow": "#ffffff00",
+  },
+  "editor.linkedEditing": true,
+  "gitlens.codeLens.scopes": [
+    "containers",
+    "document"
+  ],
+  "editor.codeLens": true,
+  "terminal.integrated.fontFamily": "'Liga SFMono Nerd Font', 'SFMono', 'Roboto Mono', 'Fira Code', 'Victor Mono', 'Cascadia Code', 'JetBrains Mono', 'Dank Mono', 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', 'monospace'",
+  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.lineHeight": 1,
+  "terminal.integrated.enablePersistentSessions": false,
+  "vscode-edge-devtools.browserFlavor": "Stable",
+  "vscode-edge-devtools.defaultUrl": "https://localhost:3000",
+  "vscode-edge-devtools.headless": true,
+  "webhint.enableTelemetry": "disabled",
+  "editor.accessibilitySupport": "off",
+  "javascript.suggest.enabled": false,
+  "typescript.suggest.autoImports": false,
+  "cssvar.files": [
+    "content/themes/**/*.css"
+  ],
+  "cssvar.extensions": [
+    "css",
+    "scss",
+    "sass"
+  ],
+  "cssvar.themes": [
+    "dark"
+  ],
+  "cssvar.excludeThemedVariables": false,
+  "cssvar.disableSort": false,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "stylelint.snippet": [
+    "css",
+    "scss"
+  ],
+  "stylelint.syntax": "scss",
+  "stylefmt.showErrorMessages": false,
+  "editor.inlineHints.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "VSCord.detailsEditing": "Line {currentline}:{currentcolumn} {problems}",
+  "VSCord.detailsViewing": "Line {currentline}:{currentcolumn} {problems}",
+  "VSCord.problemsText": "- Linter: {count} problems found",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
+  "svg.minify.removeViewBox": false,
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.enabled": false,
+  "terminal.integrated.gpuAcceleration": "off",
+  "search.forceSearchProcess": true,
+  "search.quickOpen.includeSymbols": true,
+  "discord.lowerDetailsDebugging": "Debugging: {total_lines} lines",
+  "discord.lowerDetailsEditing": "Current line: {current_line}",
+  "discord.largeImageIdling": "Thinking/Coding",
+  "discord.lowerDetailsIdling": "Thinking/Coding",
+  "discord.lowerDetailsNoWorkspaceFound": "Current line: {current_line}",
+  "discord.removeRemoteRepository": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "terminal.explorerKind": "external",
+  "gitlens.codeLens.enabled": false,
+  "TodoParser": {
+    "exclude": [
+      "**/vendor/**",
+      "**/wp/**",
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/out/**",
+      "**/build/**",
+      "**/prod/**",
+      "**/.*/**"
+    ],
+    "include": [
+      "scss",
+      "php",
+      "js"
+    ],
+    "folderExclude": [
+      "node_modules",
+      ".vscode",
+      "vendor",
+      "wp",
+      "prod"
+    ],
+    "showInProblems": true,
+    "markers": [
+      [
+        "TODO",
+        "Information"
+      ],
+      [
+        "FIXME",
+        "Warning"
+      ]
+    ],
+    "autoDefaultMarkers": false
+  },
+  "highlight.regexes": {
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#ffcc00",
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#cc0000",
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#00ccff",
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f"
+        }
+      ]
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+      "decorations": [
+        {
+          "overviewRulerColor": "#cc00cc",
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f",
+          "fontWeight": "bold"
+        },
+        {
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f"
+        }
+      ]
+    }
+  },
+  "simpleTodo.overrideFoldersToIgnore": [
+    "plugins",
+    "mu-plugins",
+    "vendor",
+    "wp",
+    "dev",
+    "prod",
+    "node_modules",
+    "dist",
+    "config",
+    "media",
+    "scripts"
+  ],
+  "simpleTodo.overrideLanguagesToCheck": [
+    "js",
+    "php",
+    "scss"
+  ],
+  "simpleTodo.overrideActionKeywords": [
+    {
+      "actionName": "TODO:",
+      "severity": "Information"
+    },
+    {
+      "actionName": "Bug:",
+      "severity": "Warning"
+    },
+  ],
+  "editor.wordWrap": "on",
+  "emptyIndent.removeIndent": true,
+  "emptyIndent.highlightIndent": true,
+  "emptyIndent.highlightColor": "rgba(246,36,89,0.6)",
+  "emptyIndent.exclude": [
+    ".md"
+  ],
+  "indenticator.inner.showIndentGuide": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.activityBar.location": "hidden",
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.colorTheme": "Github Purple",
+}
