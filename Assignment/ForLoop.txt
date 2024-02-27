@@ -1,0 +1,468 @@
+Basic Level:
+1. Write a Python program to print the numbers from 1 to 10 using a for loop.
+Ans: 
+for i in range(1, 11):
+    print(i)
+
+2. Create a program that calculates the sum of all numbers in a list using a for loop.
+Ans:  def sum_of_list(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+# Test the function
+numbers = [1, 2, 3, 4, 5]
+print(sum_of_list(numbers))  # Output: 15
+
+3. Write a program to print the characters of a string in reverse order using a for loop.
+Ans: 
+def print_reverse(string):
+    for i in range(len(string) - 1, -1, -1):
+        print(string[i])
+
+# Test the function
+print_reverse("Hello")  # Output: o l l e H
+
+4. Develop a program that finds the factorial of a given number using a for loop.
+Ans: 
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Test the function
+print(factorial(5))  # Output: 120
+
+5. Create a program to print the multiplication table of a given number using a for loop.
+Ans: 
+def multiply_table(num):
+    for i in range(1,  11):
+        print(f"{num} x {i} = {num*i}")
+
+# Test the function
+multiply_table(5)
+# Output:
+# 5 x 1 = 5
+# 5 x 2 = 10
+# 5 x 3 = 15
+# 5 x 4 = 20
+# 5 x 5 = 25
+# 5 x 6 = 30
+# 5 x 7 = 35
+# 5 x 8 = 40
+# 5 x 9 = 45
+# 5 x 10 = 50
+
+6. Write a program that counts the number of even and odd numbers in a list using a for loop.
+Ans:
+def count_even_odd(numbers):
+    count_even = 0
+    count_odd = 0
+    for num in numbers:
+        if num % 2 == 0:
+            count_even += 1
+        else:
+            count_odd += 1
+    return count_even, count_odd
+
+# Test the function
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_count, odd_count = count_even_odd(numbers)
+
+7. Develop a program that prints the squares of numbers from 1 to 5 using a for loop.
+Ans:
+for i in range(1, 6):
+    print(i**2)
+
+8. Create a program to find the length of a string without using the len)' function.
+Ans:
+
+9. Write a program that calculates the average of a list of numbers using a for loop.
+Ans:
+def string_length(s):
+    count = 0
+    for char in s:
+        count += 1
+    return count
+
+# Test the function
+print(string_length("Hello"))  # Output: 5
+
+10. Develop a program that prints the first in Fibonacci numbers using a for loop.
+Ans: def print_fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a)
+        a, b = b, a + b
+
+# Test the function
+print_fibonacci(10)  # Output: 0 1 1 2 3 5 8 13 21 34
+
+                                Intermediate Level: 
+11. Write a program to check if a given list contains any duplicates using a for loop.
+Ans:
+
+12. Create a program that prints the prime numbers in a given range using a for loop.
+
+def has_duplicates(lst):
+    seen = set()
+    for item in lst:
+        if item in seen:
+            return True
+        seen.add(item)
+    return False
+
+# Test the function
+numbers = [1, 2, 3, 4, 5, 2]
+print(has_duplicates(numbers))  # Output: True
+
+
+13. Develop a program that counts the number of vowels in a string using a for loop.
+Ans:
+def count_vowels(s):
+    count = 0
+    vowels = 'aeiouAEIOU'
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+
+# Test the function
+print(count_vowels("Hello World"))  # Output: 3
+
+
+14. Write a program to find the maximum element in a 2D list using a nested for loop.
+Ans: def find_max_2d(lst):
+    max_element = lst[0][0]
+    for sublist in lst:
+        for item in sublist:
+            if item > max_element:
+                max_element = item
+    return max_element
+
+# Test the function
+numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(find_max_2d(numbers))  # Output: 9
+
+15. Create a program that removes all occurrences of a specific element from a list using a for loop.
+Ans:
+def remove_element(lst, element):
+    return [item for item in lst if item != element]
+
+# Test the function
+numbers = [1, 2, 3, 2, 4, 2, 5]
+print(remove_element(numbers, 2))  # Output: [1, 3, 4, 5]
+
+16. Develop a program that generates a multiplication table for numbers from 1 to 5 using a nested for loop.
+Ans:
+for i in range(1, 6):
+    for j in range(1, 6):
+        print(f"{i} * {j} = {i * j}")
+    print("---")
+
+
+17. Write a program that converts a list of Fahrenheit temperatures to Celsius using a for loop.
+Ans:
+def convert_to_celsius(fahrenheit_temps):
+    celsius_temps = []
+    for temp in fahrenheit_temps:
+        celsius = (temp - 32) * 5/9
+        celsius_temps.append(celsius)
+    return celsius_temps
+
+# Test the function
+fahrenheit_temps = [32, 68, 100, 212]
+print(convert_to_celsius(fahrenheit_temps))  # Output: [0.0, 20.0, 37.77777777777778, 100.0]
+
+
+18. Create a program to print the common elements from two lists using a for loop.
+Ans:
+def print_common_elements(list1, list2):
+    for element in list1:
+        if element in list2:
+            print(element)
+
+# Test the function
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+print_common_elements(list1, list2)  # Output: 4 5
+
+
+19. Develop a program that prints the pattern of right-angled triangles using a for loop. Use " to draw the pattern
+Ans:
+def print_triangle(n):
+    for i in range(1, n+1):
+        for j in range(i):
+            print("*", end="")
+        print()
+
+# Test the function
+print_triangle(5)
+
+
+20. Write a program to find the greatest common divisor (GCD) of two numbers using a for loop.
+Ans:
+def gcd(a, b):
+    gcd = 1
+    for i in range(1, min(a, b) + 1):
+        if a % i == 0 and b % i == 0:
+            gcd = i
+    return gcd
+
+# Test the function
+print(gcd(60, 48))  # Output: 12
+
+
+                            Advanced Level:
+21. Create a program that calculates the sum of the digits of numbers in a list using a list comprehension.
+Ans:
+def sum_of_digits(lst):
+    return [sum(int(digit) for digit in str(num)) for num in lst]
+
+# Test the function
+numbers = [123, 456, 789]
+print(sum_of_digits(numbers))  # Output: [6, 15, 24]
+
+22. Write a program to find the prime factors of a given number using a for loop and list comprehension.
+Ans:
+
+23. Develop a program that extracts unique elements from a list and stores them in a new list using a list comprehension.
+Ans:
+def prime_factors(n):
+    factors = [i for i in range(2, n+1) if n % i == 0]
+    prime_factors = [i for i in factors if all(i % j != 0 for j in range(2, int(i**0.5) + 1))]
+    return prime_factors
+
+# Test the function
+print(prime_factors(315))  # Output: [3, 5, 7]
+
+
+24. Create a program that generates a list of all palindromic numbers up to a specified limit using a list comprehension.
+Ans: def palindromic_numbers(limit):
+    return [num for num in range(limit) if str(num) == str(num)[::-1]]
+
+# Test the function
+print(palindromic_numbers(200))  # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111, 121, 131, 141, 151, 161, 171, 181, 191]
+
+25. Write a program to flatten a nested list using list comprehension.
+Ans:
+def flatten_list(nested_list):
+    return [item for sublist in nested_list for item in sublist]
+
+# Test the function
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(flatten_list(nested_list))  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+26. Develop a program that computes the sum of even and odd numbers in a list separately using list comprehension.
+Ans:
+def sum_even_odd(lst):
+    sum_even = sum(num for num in lst if num % 2 == 0)
+    sum_odd = sum(num for num in lst if num % 2 != 0)
+    return sum_even, sum_odd
+
+# Test the function
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_sum, odd_sum = sum_even_odd(numbers)
+print(f"Sum of even numbers: {even_sum}")  # Output: Sum of even numbers: 20
+print(f"Sum of odd numbers: {odd_sum}")  # Output: Sum of odd numbers: 25
+
+
+27. Create a program that generates a list of squares of odd numbers between 1 and 10 using list comprehension.
+Ans:
+def squares_of_odd_numbers():
+    return [num**2 for num in range(1, 11) if num % 2 != 0]
+
+# Test the function
+print(squares_of_odd_numbers())  # Output: [1, 9, 25, 49, 81]
+
+28. Write a program that combines two lists into a dictionary using list comprehension.
+Ans:
+# Define two lists
+keys = ['name', 'age', 'job']
+values = ['John', 25, 'Developer']
+
+# Use list comprehension to combine the lists into a dictionary
+dictionary = {k: v for k, v in zip(keys, values)}
+
+# Print the resulting dictionary
+print(dictionary)
+
+
+29. Develop a program that extracts the vowels from a string and stores them in a list using list comprehension.
+Ans:
+# Define a string
+s = "Hello, World!"
+
+# Use list comprehension to extract the vowels
+vowels = [char for char in s if char.lower() in 'aeiou']
+
+# Print the resulting list
+print(vowels)
+
+
+30. Create a program that removes all non-numeric characters from a list of strings using list comprehension.
+Ans:
+# Define a list of strings
+strings = ['abc123', 'def456', 'ghi789']
+
+# Use list comprehension to remove non-numeric characters from each string
+numeric_strings = [''.join(char for char in s if char.isdigit()) for s in strings]
+
+# Print the resulting list
+print(numeric_strings)
+
+                        Challenge Level:
+31. Write a program to generate a list of prime numbers using the Sieve of Eratosthenes algorithm and list comprehension.
+Ans:
+def sieve_of_eratosthenes(limit):
+    # Create a boolean array "prime[0..n]" and initialize all entries as true.
+    # A value in prime[i] will finally be false if i is Not a prime, else true.
+    primes = [True for i in range(limit+1)]
+    p = 2
+    while (p * p <= limit):
+        # If primes[p] is not changed, then it is a prime
+        if (primes[p] == True):
+            # Update all multiples of p
+            for i in range(p * p, limit+1, p):
+                primes[i] = False
+        p += 1
+
+    # Collect and print all prime numbers
+    prime_numbers = [p for p in range(2, limit) if primes[p]]
+    return prime_numbers
+
+# Test the function
+print(sieve_of_eratosthenes(30))
+
+
+32. Create a program that generates a list of all Pythagorean triplets up to a specified limit using list
+Ans: def generate_pythagorean_triplets(limit):
+    # Use list comprehension to generate Pythagorean triplets
+    triplets = [(a, b, c) for a in range(1, limit) for b in range(a, limit) for c in range(b, limit) if a*a + b*b == c*c]
+    return triplets
+
+# Test the function
+print(generate_pythagorean_triplets(30))
+
+
+33. Develop a program that generates a list of all possible combinations of two lists using list comprehension.
+Ans:
+# Define two lists
+list1 = ['a', 'b', 'c']
+list2 = [1, 2, 3]
+
+# Use list comprehension to generate all possible combinations
+combinations = [(x, y) for x in list1 for y in list2]
+
+# Print the resulting list
+print(combinations)
+
+34. Write a program that calculates the mean, median, and mode of a list of numbers using list comprehension.
+Ans:
+from collections import Counter
+import statistics
+
+# Define a list of numbers
+numbers = [1, 2, 2, 3, 4, 4, 4, 5]
+
+# Calculate the mean using list comprehension
+mean = sum(numbers) / len(numbers)
+
+# Calculate the median using the statistics module
+median = statistics.median(numbers)
+
+# Calculate the mode using the Counter class from the collections module
+counts = Counter(numbers)
+mode = [num for num, freq in counts.items() if freq == counts.most_common(1)[0][1]]
+
+# Print the results
+print("Mean:", mean)
+print("Median:", median)
+print("Mode:", mode)
+
+35. Create a program that generates Pascal's triangle up to a specified number of rows using list comprehension.
+Ans:
+def generate_pascals_triangle(n):
+    triangle = [[1]]
+    for i in range(1, n):
+        row = [1]
+        last_row = triangle[-1]
+        row += [last_row[j] + last_row[j+1] for j in range(len(last_row)-1)]
+        row.append(1)
+        triangle.append(row)
+    return triangle
+
+# Test the function
+for row in generate_pascals_triangle(5):
+    print(row)
+
+    [1]
+[1, 1]
+[1, 2, 1]
+[1, 3, 3, 1]
+[1, 4, 6, 4, 1]
+
+36. Develop a program that calculates the sum of the digits of a factorial of numbers from 1 to 5 using list comprehension.
+Ans:
+import math
+
+# Calculate the factorial and sum of digits for numbers from 1 to 5
+results = [sum(int(digit) for digit in str(math.factorial(i))) for i in range(1, 6)]
+
+# Print the results
+print(results)
+
+37. Write a program that finds the longest word in a sentence using list comprehension.
+Ans:
+# Define a sentence
+sentence = "The quick brown fox jumps over the lazy dog"
+
+# Use list comprehension to find the longest word
+words = sentence.split()
+longest_word = max(words, key=len)
+
+# Print the longest word
+print(longest_word)
+
+38. Create a program that filters a list of strings to include only those with more than three vowels using list comprehension.
+Ans:
+# Define a list of strings
+strings = ['hello', 'world', 'beautiful', 'day', 'Python', 'programming']
+
+# Use list comprehension to filter the strings
+filtered_strings = [s for s in strings if sum(1 for char in s if char.lower() in 'aeiou') > 3]
+
+# Print the filtered strings
+print(filtered_strings)
+
+39. Develop a program that calculates the sum of the digits of numbers from 1 to 1000 using list comprehension.
+Ans:
+# Calculate the sum of digits for numbers from 1 to 1000
+results = [sum(int(digit) for digit in str(i)) for i in range(1, 1001)]
+
+# Print the results
+print(results)
+
+40. Write a program that generates a list of prime palindromic numbers using list comprehension.
+Ans:
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def is_palindrome(n):
+    return str(n) == str(n)[::-1]
+
+# Define the limit
+limit = 1000
+
+# Use list comprehension to generate prime palindromic numbers
+prime_palindromes = [n for n in range(2, limit) if is_prime(n) and is_palindrome(n)]
+
+# Print the resulting list
+print(prime_palindromes)
