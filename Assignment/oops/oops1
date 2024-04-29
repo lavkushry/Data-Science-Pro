@@ -1,0 +1,86 @@
+Q1, Create a vehicle class with an init method having instance variables as name_of \_vehicle, max_speed and average_of_vehicle.
+Ans:
+
+class Vehicle:
+def **init**(self, name_of_vehicle, max_speed, mileage):
+self.name_of_vehicle = name_of_vehicle
+self.max_speed = max_speed
+self.mileage = mileage
+
+Q2. Create a child class car from the vehicle class created in Que 1, which will inherit the vehicle class.
+Create a method named seating \_ capacity which takes capacity as an argument and returns the name of the vehicle and its seating capacity.
+
+Ans:
+class Vehicle:
+def **init**(self, name_of_vehicle, max_speed, mileage):
+self.name_of_vehicle = name_of_vehicle
+self.max_speed = max_speed
+self.mileage = mileage
+
+class Car(Vehicle):
+def seating_capacity(self, capacity):
+return f"The {self.name_of_vehicle} has a seating capacity of {capacity} passengers"
+
+Q3. What is multiple inheritance? Write a python code to demonstrate multiple inheritance.
+Ans:
+class Parent1:
+def func1(self):
+print("This is function one")
+
+class Parent2:
+def func2(self):
+print("This is function two")
+
+class Child(Parent1, Parent2):
+def func3(self):
+print("This is function three")
+
+# Create an instance of Child
+
+child = Child()
+
+# Call functions
+
+child.func1()
+child.func2()
+child.func3()
+
+Q4. What are getter and setter in python? Create a class and create a getter and a setter method in this class.
+
+Ans:
+class MyClass:
+def **init**(self):
+self.\_my_attr = 0 # a private attribute
+
+    @property
+    def my_attr(self):
+        print("Getting attribute value...")
+        return self._my_attr
+
+    @my_attr.setter
+    def my_attr(self, value):
+        print("Setting attribute value...")
+        if value < 0:
+            raise ValueError("Value cannot be negative")
+        self._my_attr = value
+
+Q5. What is method overriding in python? Write a python code to demonstrate method overriding.
+
+Ans:
+class Parent:
+def my_method(self):
+print("This is the parent's method")
+
+class Child(Parent):
+def my_method(self):
+print("This is the child's method")
+
+# Create instances
+
+p = Parent()
+c = Child()
+
+# Call the method
+
+p.my_method() # Outputs: This is the parent's method
+c.my_method() # Outputs: This is the child's method
